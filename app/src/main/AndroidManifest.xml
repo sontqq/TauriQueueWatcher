@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sontme.esp.tauriqueuewatcher">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/wowicon_mage"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/wowicon_mage"
+        android:launchMode="singleTask"
+        android:supportsRtl="true"
+        android:name=".Analytics"
+        android:authorities="${applicationId}.share"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4051604993335718~5768229013"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.analytics.globalConfigResource"
+            android:resource="@xml/global_tracker"/>
+    <activity android:name=".MainActivity"
+        android:screenOrientation="portrait">
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="6138261560cf83a66633e863070aca5e6fcb6bc8" />
+
+        <provider
+            android:name=".MainActivity$GenericFileProvider"
+            android:authorities="${applicationId}.com.sontme.esp.tauriqueuewatcher.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+    </application>
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+
+</manifest>

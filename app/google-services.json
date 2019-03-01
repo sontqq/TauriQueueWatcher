@@ -1,0 +1,43 @@
+{
+  "project_info": {
+    "project_number": "115649255515",
+    "firebase_url": "https://tauriqueuewatcher.firebaseio.com",
+    "project_id": "tauriqueuewatcher",
+    "storage_bucket": "tauriqueuewatcher.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115649255515:android:d9bdbc39a9b3acf9",
+        "android_client_info": {
+          "package_name": "com.sontme.esp.tauriqueuewatcher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115649255515-sbc3s2lr23e44aohescosuvg7bbsvq2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhtHZ6_O-Uixnpp1ULDw-TkcS-A6ExbGg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-4051604993335718~5768229013"
+    }
+  ],
+  "configuration_version": "1"
+}
